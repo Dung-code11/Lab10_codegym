@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thực Hành 2</title>
+</head>
+<body>
+    <script>
+        // Bài 1
+        let total = 0;
+        let num = parseFloat(prompt("Nhập một số (nhập -1 để dừng): "));
+
+        while (num !== -1) {
+            alert(`Bạn vừa nhập: ${num}`);
+            total += num;
+            num = parseFloat(prompt("Nhập một số (nhập -1 để dừng): "));
+        }
+
+        alert(`Tổng các số đã nhập là: ${total}`);
+        // Bài 2
+        let i = 1;
+        while (i <= 100) { // Đảm bảo i chạy đến 100
+            document.write(`<hr width="${i}%" style="border: 0.5px solid gray;">`);
+            i++;
+        }
+    </script>
+</body>
+</html>
