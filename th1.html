@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thực Hành 1</title>
+</head>
+<body>
+    <h2>Bài 1: Hiển thị chuỗi</h2>
+    <div id="output1"></div>
+    
+    <h2>Bài 2: Tính tổng từ 1 đến N</h2>
+    <input type="number" id="numberInput" min="1" placeholder="Nhập số lớn hơn 0">
+    <button onclick="calculateSum()">Tính tổng</button>
+    <p id="output2"></p>
+
+    <script>
+        // Bài 1: Hiển thị chuỗi với vòng lặp for
+        let output1 = document.getElementById("output1");
+        for (let N = 0; N <= 5; N++) {
+            output1.innerHTML += `The number is ${N} <br>`;
+        }
+
+        // Bài 2: Tính tổng các số từ 1 đến N
+        function calculateSum() {
+            let num = document.getElementById("numberInput").value;
+            let sum = 0;
+            for (let i = 1; i <= num; i++) {
+                sum += i;
+            }
+            document.getElementById("output2").innerText = `Tổng từ 1 đến ${num} là: ${sum}`;
+        }
+    </script>
+</body>
+</html>
